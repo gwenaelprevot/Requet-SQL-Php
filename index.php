@@ -149,8 +149,9 @@
                     <div id="<?= $listtaches['titre'] ?>"
                          class="invisible descrp"><?= $listtaches['description'] ?></div>
                     <a class="buton"
-                       href="index.php?page=editer&id=<?= $listtaches['cle_tache'] ?>&nom=<?php echo $listtaches['titre']; ?>">Edit
-                        me</a>
+                       href="index.php?page=editer&id=<?= $listtaches['cle_tache'] ?>&titre=<?php echo $listtaches['titre']; ?>&tache=<?php echo $listtaches['tache']; ?>">
+                        Edit me
+                    </a>
                     <form method="post" action="traitementsupr.php">
                         <button class="buton" type="submit" value="<?= $listtaches['cle_tache'] ?>" name="supression">
                             Finish me
